@@ -1,0 +1,65 @@
+@keyframes twinkling {
+  0% {
+    background-color: #092850;
+    color: white;
+  }
+  50% {
+    background-color: #ffc436;
+    color: #092850;
+  }
+  100% {
+    background-color: #092850;
+    color: white;
+  }
+}
+@keyframes correct {
+  0% {
+    background-color: #092850;
+    color: white;
+  }
+  100% {
+    background-color: green;
+  }
+}
+@keyframes wrong {
+  0% {
+    background-color: #092850;
+    color: white;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.option {
+  width: 43rem;
+  height: 5rem;
+  background-color: #092850;
+  border: 2px solid white;
+  color: white;
+
+  font-size: 25px;
+}
+.option_clicked_correct {
+  animation: twinkling 0.5s linear 0s 3, correct 1s linear 1.5s 1;
+}
+.option_grayed {
+  background-color: rgba(169, 169, 169, 0.345);
+  color: #092850;
+  transition: background-color 1s ease;
+}
+.option:hover {
+  background-color: #0c356a;
+  transform: scale(1.01);
+}
+.option_grayed:hover {
+  background-color: rgba(169, 169, 169, 0.344);
+  color: #092850;
+}
+
+.option_clicked_wrong {
+  animation: twinkling 0.5s linear 0s 3, wrong 1s linear 1.5s 1;
+}
+.option_wrong_correct {
+  animation: correct 1s 1 linear 1.5s;
+}

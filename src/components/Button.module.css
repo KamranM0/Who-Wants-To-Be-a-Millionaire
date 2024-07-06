@@ -1,0 +1,69 @@
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.primary {
+  background-color: #0c356a;
+  color: #ffc436;
+
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5rem;
+  border: 0.15rem solid;
+  font-family: inherit;
+  font-size: 1.5rem;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+.primary:hover {
+  background-color: #ffc436;
+  transform: scale(1.2);
+  color: #0c356a;
+}
+.joker {
+  width: 4.8rem;
+  height: 4rem;
+  background-color: #0c356a;
+  border: 2px #fff solid;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 25px;
+  fill: #fff;
+}
+.joker:hover {
+  background-color: #fff;
+  color: #0c356a;
+  fill: #0c356a;
+}
+.joker_used {
+  width: 4.8rem;
+  height: 4rem;
+  background-color: rgba(169, 169, 169, 0.371);
+  border: 2px #fff solid;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 25px;
+  fill: #fff;
+}
+.option {
+  width: 43rem;
+  height: 5rem;
+  background-color: #092850;
+  border: 2px solid white;
+  color: white;
+
+  font-size: 25px;
+}
+.option_clicked {
+  animation: twinkling 0.9s 3;
+}
+.option:hover {
+  background-color: #0c356a;
+  transform: scale(1.01);
+}

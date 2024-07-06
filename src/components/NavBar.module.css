@@ -1,0 +1,33 @@
+.nav {
+  display: block;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 100px;
+  margin: 30px 60px;
+  justify-content: flex-end;
+}
+.nav a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+.scoreboard:hover {
+  color: #ffc436;
+}
+a.ctaLink:link,
+a.ctaLink:visited {
+  background-color: #ffc436;
+  color: #0c356a;
+  padding: 0.7rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+}
+a.ctaLink:hover {
+  background-color: #0c356a;
+  border: 2px solid #ffc436;
+  color: #ffc436;
+}

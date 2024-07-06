@@ -1,0 +1,15 @@
+.options {
+  width: 100%;
+  height: 250px;
+  margin: 25px auto 100px auto;
+}
+.options ul {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: 1.5fr 1.5fr;
+  list-style: none;
+
+  gap: 10px 0px;
+  margin: 0;
+}

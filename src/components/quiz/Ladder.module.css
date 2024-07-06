@@ -1,0 +1,8 @@
+.ladder {
+  display: flex;
+}
+.ladder ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}

@@ -1,0 +1,62 @@
+.jokers_container {
+  display: flex;
+  justify-content: space-around;
+}
+.jokers_container ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 40px;
+}
+.jokers_container svg {
+  transform: translateY(3px);
+}
+.phone {
+  stroke: none, stroke-width 0;
+  stroke-dasharray: none;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+  transform: translateY(2);
+  fill-rule: nonzero;
+  opacity: 1;
+}
+.path_1 {
+  stroke: none;
+  stroke-width: 1;
+  stroke-dasharray: none;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+  fill-rule: nonzero;
+  opacity: 1;
+}
+.path_2 {
+  stroke: none;
+  stroke-width: 1;
+  stroke-dasharray: none;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+  fill-rule: nonzero;
+  opacity: 1;
+}
+.path_3 {
+  stroke: none;
+  stroke-width: 1;
+  stroke-dasharray: none;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+  fill-rule: nonzero;
+  opacity: 1;
+  stroke: none;
+  stroke-width: 1;
+  stroke-dasharray: none;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+
+  fill-rule: nonzero;
+  opacity: 1;
+}

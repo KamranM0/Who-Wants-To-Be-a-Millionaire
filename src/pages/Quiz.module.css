@@ -1,0 +1,43 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  z-index: 9999; /* Ensure it's on top of other content */
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Prevent interaction */
+}
+
+.overlayContent {
+  pointer-events: all; /* Allow interaction with the content inside the overlay */
+}
+
+.hidden {
+  display: none;
+}
+
+.centeredDiv {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.overlay_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 9;
+}

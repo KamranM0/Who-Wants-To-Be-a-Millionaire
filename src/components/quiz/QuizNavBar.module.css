@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  margin: 10px 40px;
+  align-items: center;
+  justify-content: center;
+}
+.nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  gap: 70px;
+}
+.nav a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  color: #ffc436;
+}
