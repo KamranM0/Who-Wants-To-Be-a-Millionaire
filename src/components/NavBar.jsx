@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div className={styles.nav}>
       <ul>
-        <li>
+        {/* <li>
           <NavLink className={styles.scoreboard} to="scoreboard">
             Scoreboard
           </NavLink>
@@ -14,7 +14,7 @@ function NavBar() {
           <NavLink className={styles.ctaLink} to="login">
             Login
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

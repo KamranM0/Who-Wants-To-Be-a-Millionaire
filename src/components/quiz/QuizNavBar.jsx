@@ -15,7 +15,9 @@ function QuizNavBar() {
           <NavLink to="ladder">${shownMoney}</NavLink>
         </li>
         <li>
-          <Button type={"primary"}>Quit</Button>
+          <NavLink to={"/"}>
+            <Button type={"primary"}>Quit</Button>
+          </NavLink>
         </li>
       </ul>
     </div>

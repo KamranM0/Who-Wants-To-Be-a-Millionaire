@@ -28,16 +28,13 @@ function FinishContainer() {
       <p>
         You earned <em>{money}$</em>
       </p>
-      <p>
-        Your current money: <em>30000$</em>
-      </p>
       <div className={styles.button_container}>
-        <Button
+        {/* <Button
           type={"primary"}
           style={{ fontSize: "23px", width: "12.5rem", height: "3.5rem" }}
         >
           See scoreboard
-        </Button>
+        </Button> */}
         <Button
           onClick={handleGoToHome}
           type={"primary"}

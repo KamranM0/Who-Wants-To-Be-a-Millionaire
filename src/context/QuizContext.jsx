@@ -10,6 +10,133 @@ import {
 } from "react";
 import { getRandomQuestion, shuffleArray } from "../utils/QuestionsUtil";
 import { useNavigate } from "react-router-dom";
+const questionsOffline = {
+  questions: [
+    {
+      question: "What is the biggest lake in the world",
+      difficulty: 1,
+      correctAnswer: "Caspian Sea",
+      otherAnswers: ["Baikal Lake", "Amazon River", "Missisipi Lake"],
+      id: 1,
+    },
+    {
+      question: "What is the capital city of Turkey",
+      difficulty: 1,
+      correctAnswer: "Ankara",
+      otherAnswers: ["Sivas", "Istanbul", "Konya"],
+      id: 2,
+    },
+    {
+      question: "A magnet would most likely attract which of the following?",
+      difficulty: 1,
+      correctAnswer: "Metal",
+      otherAnswers: ["Plastic", "Wood", "Rock"],
+      id: 3,
+    },
+    {
+      question: "Where did Scotch whisky originate?",
+      difficulty: 1,
+      correctAnswer: "Scotland",
+      otherAnswers: ["England", "Uganda", "Wales"],
+      id: 4,
+    },
+    {
+      question:
+        "In the United States, what is traditionally the proper way to address a judge?",
+      difficulty: 1,
+      correctAnswer: "Your honor",
+      otherAnswers: ["Muellim", "Hey bro", "By their name"],
+      id: 5,
+    },
+    {
+      question: "If someone asked to see your ID, what might you show them?",
+      difficulty: 2,
+      correctAnswer: "ID",
+      otherAnswers: ["Tongue", "Foot", "Head"],
+      id: 6,
+    },
+    {
+      question:
+        "Due to the geographical areas they represented, the opposing sides of the US Civil War were known by what names?",
+      difficulty: 2,
+      correctAnswer: "The North and South",
+      otherAnswers: [
+        "The Hills and the Valleys",
+        "The Kool and the Gang",
+        "The West and East",
+      ],
+      id: 7,
+    },
+    {
+      question:
+        "According to the old saying, 'love of' what 'is the root of all evil'?",
+
+      difficulty: 2,
+      correctAnswer: "Money",
+      otherAnswers: ["Food", "Clothes", "Book"],
+      id: 8,
+    },
+    {
+      question:
+        "When a person is rudely ignored, he is said to be getting what?",
+
+      difficulty: 2,
+      correctAnswer: "Cold shoulder",
+      otherAnswers: ["Hot feet", "Normal head", "Low kick"],
+      id: 9,
+    },
+    {
+      question: "Who is considered to be the GOAT of UFC?",
+
+      difficulty: 2,
+      correctAnswer: "Jon Jones",
+      otherAnswers: ["Conor Mcgregor", "Khabib Nurmagomedov", "Dustin Poirier"],
+      id: 10,
+    },
+    {
+      question: "A common piece of advice goes 'be there or be' what?",
+
+      difficulty: 3,
+      correctAnswer: "Square",
+      otherAnswers: ["Round", "Triangle", "Line"],
+      id: 11,
+    },
+    {
+      question: "Who won the World Cup 2022",
+
+      difficulty: 3,
+      correctAnswer: "Argentina",
+      otherAnswers: ["Ghana", "England", "France"],
+      id: 12,
+    },
+    {
+      question: "One of the following is Pink Floyd album:",
+
+      difficulty: 3,
+      correctAnswer: "The Wall",
+      otherAnswers: ["Comfortably Numb", "The Brick", "Dust"],
+      id: 13,
+    },
+    {
+      question: "What is the best team in Turkey Super League?",
+
+      difficulty: 3,
+      correctAnswer: "Besiktas",
+      otherAnswers: ["Galatasaray", "Fenerbahce", "Caykur Rizespor"],
+      id: 14,
+    },
+    {
+      question:
+        "Something in an obvious location is said to be 'right under your' what?",
+
+      difficulty: 3,
+      correctAnswer: "Nose",
+      otherAnswers: ["Mattress", "Mouth", "Head"],
+      id: 15,
+    },
+  ],
+};
+
 const QuizContext = createContext();
 const moneyLadder = [
   0, 50, 150, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000,
@@ -145,7 +272,7 @@ function QuizProvider({ children }) {
     },
     dispatch,
   ] = useReducer(reducer, initState);
-  const usedQuestionsIds = usedQuestions?.map((el) => el.id);
+  const usedQuestionsIds = usedQuestions?.map((el) => el?.id);
   const notUsedQuestions = usedQuestionsIds
     ? questions.filter((el) => !usedQuestionsIds.includes(el.id))
     : null;
@@ -155,9 +282,11 @@ function QuizProvider({ children }) {
     async function getQuestions() {
       try {
         dispatch({ type: "questions/loading" });
-        const res = await fetch(BASE_URL);
-        const data = await res.json();
-        dispatch({ type: "questions/loaded", payload: data });
+        console.log(questionsOffline.questions);
+        dispatch({
+          type: "questions/loaded",
+          payload: questionsOffline.questions,
+        });
       } catch (error) {
         dispatch({ type: "error", payload: error.message });
       }
