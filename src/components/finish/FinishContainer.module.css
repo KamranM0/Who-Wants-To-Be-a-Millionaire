@@ -1,8 +1,8 @@
 .container {
   margin: 20px;
   min-height: 400px;
-  background-color: #092850;
   width: 100%;
+  background-color: #092850;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,21 @@
 .button_container {
   display: flex;
   position: absolute;
-  bottom: 40px;
+  bottom: 80px;
 
   gap: 100px;
+}
+.button_container button {
+  font-size: 23px;
+  width: 12.5rem;
+  height: 3.5rem;
+}
+@media (max-width: 600px) {
+  .button_container {
+    gap: 20px;
+  }
+  .button_container button {
+    width: 150px;
+    font-size: 20px;
+  }
 }

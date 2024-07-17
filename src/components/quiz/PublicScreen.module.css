@@ -78,3 +78,8 @@
   border: 2px solid #0c356a;
   color: #0c356a;
 }
+@media (max-width: 600px) {
+  .bar {
+    width: 100%;
+  }
+}

@@ -60,3 +60,15 @@
   fill-rule: nonzero;
   opacity: 1;
 }
+@media (max-width: 601px) {
+  .jokers_container ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) {
+}

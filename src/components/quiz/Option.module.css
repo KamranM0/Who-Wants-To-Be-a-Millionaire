@@ -32,7 +32,7 @@
 }
 
 .option {
-  width: 43rem;
+  width: 46vw;
   height: 5rem;
   background-color: #092850;
   border: 2px solid white;
@@ -62,4 +62,16 @@
 }
 .option_wrong_correct {
   animation: correct 1s 1 linear 1.5s;
+}
+@media (max-width: 601px) {
+  .option {
+    height: 65px;
+  }
+  .option {
+    font-size: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) {
 }

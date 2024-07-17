@@ -67,3 +67,16 @@
   background-color: #0c356a;
   transform: scale(1.01);
 }
+@media (max-width: 601px) {
+  .joker {
+    width: 4.2rem;
+    height: 3.8rem;
+  }
+  .primary {
+    width: 2rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) {
+}

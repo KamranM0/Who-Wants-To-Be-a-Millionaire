@@ -35,18 +35,10 @@ function FinishContainer() {
         >
           See scoreboard
         </Button> */}
-        <Button
-          onClick={handleGoToHome}
-          type={"primary"}
-          style={{ fontSize: "23px", width: "12.5rem", height: "3.5rem" }}
-        >
+        <Button onClick={handleGoToHome} type={"primary"}>
           Go to home
         </Button>
-        <Button
-          onClick={handleRestartGame}
-          type={"primary"}
-          style={{ fontSize: "23px", width: "12.5rem", height: "3.5rem" }}
-        >
+        <Button onClick={handleRestartGame} type={"primary"} style={{}}>
           Restart game
         </Button>
       </div>

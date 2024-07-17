@@ -1,17 +1,19 @@
 .nav {
   display: flex;
-  margin: 10px 40px;
+  padding: 10px 20px;
   align-items: center;
   justify-content: center;
 }
+
 .nav ul {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: right;
   list-style: none;
   text-decoration: none;
   align-items: center;
-  gap: 70px;
+  margin-right: 0;
+  gap: 20px;
 }
 .nav a {
   font-size: 30px;
@@ -20,4 +22,21 @@
 }
 .nav a:hover {
   color: #ffc436;
+}
+
+@media (max-width: 601px) {
+  .nav button {
+    width: 120px;
+  }
+  .nav img {
+    width: 70px;
+    height: 70px;
+  }
+  .nav a {
+    font-size: 25px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) {
 }

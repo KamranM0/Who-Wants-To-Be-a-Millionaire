@@ -7,7 +7,7 @@
   display: grid;
   justify-items: center;
   width: 100%;
-  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   list-style: none;
 
   gap: 10px 0px;

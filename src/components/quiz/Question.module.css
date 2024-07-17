@@ -3,6 +3,7 @@
   margin: 25px 0;
   min-height: 280px;
   position: relative;
+  width: 100%;
 }
 .question_container h2 {
   color: white;
@@ -35,4 +36,27 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media (max-width: 601px) {
+  .question_container {
+    min-height: 250px;
+    margin-top: 0;
+  }
+  .question_container p {
+    font-size: 25px;
+  }
+  .question_container h2 {
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.9rem;
+  }
+  .question_container p {
+    padding: 0;
+    margin-top: 60px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) {
 }

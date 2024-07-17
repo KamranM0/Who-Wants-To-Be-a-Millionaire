@@ -52,7 +52,7 @@ const questionsOffline = {
       question: "If someone asked to see your ID, what might you show them?",
       difficulty: 2,
       correctAnswer: "ID",
-      otherAnswers: ["Tongue", "Foot", "Head"],
+      otherAnswers: ["Finger", "Hand", "Head"],
       id: 6,
     },
     {
